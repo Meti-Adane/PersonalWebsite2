@@ -1,0 +1,147 @@
+@media screen and (max-width:768px){  
+    nav{
+        position: relative;
+        background-color: aqua;
+        color: #000;
+        height: 100%;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+    footer.end-footer{
+        visibility:visible;
+    }
+    #icons{
+        visibility: hidden;
+    }
+    .col-md-4{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+    }
+    .navBarContent{
+        top: 0;
+        position: fixed; 
+        width: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        /* padding-bottom: 2rem;     */
+    }
+  
+    .navbar{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        align-content: center;
+        
+    } 
+    nav{
+        width: 100%;
+    } 
+    .navbar ul{
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-content: center;
+        margin: 3.5rem auto;
+        width: 100%;
+        padding: 0 10rem;
+        height: 1000px;
+        background-color: rgb(255, 255, 255, 1);
+        text-align: center;
+        align-items: center;
+        
+    }
+    .navbar ul li{
+        padding: 1rem 0 ; 
+        font-size: larger;
+    }
+     
+    .col-md-8{
+        position: relative;
+        margin-top: 12rem;
+    }
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+a{
+    color: #000;
+}
+
+a:hover{
+    text-decoration:none;
+    color: #000;
+}
+nav{
+    
+    background-color: white;
+    opacity: 0.9; 
+}
+.navBarContent{
+    background-color: white;
+    opacity: 1;   
+}
+
+
+/* Page specific css */
+.card img{
+    height: 200px !important;
+}
+.card .card-title{
+    font-size: smaller;
+}
+.card .card-text{
+    font-size: smaller;
+}
+h2{
+    font-size:larger;
+    color: #1D1E2C;
+}
+.date-text{
+    font-style: oblique;
+    color: #777;
+    margin-bottom: 300px;
+}
+.title{
+    font-size: 1.8rem;
+    color:#350729;
+    text-shadow: antiquewhite;
+    
+}
+
+/* Footer and social media */
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;    
+    border-radius: 50%;
+    align-self: center;
+    background: #b4b1b3;
+    color: white;
+}  
+.fa:hover {
+      opacity: 0.7;
+}
+
+
+
+
+
+
+/* .social-media{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+} */
+
+
