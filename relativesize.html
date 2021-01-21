@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./Assets/css/blogpage.css">
+        <link rel="icon" href="./Assets/Images/Mlogo2.png">
+        <title>blog</title>
+       
+    </head>
+<body>
+    <div class="container-md">
+        <div class="row">
+        <div class="col-md-4 ">
+            <div class="navBarContent sticky-top pt-5">
+           
+                <a class="text-decoration-none text-lead text-uppercase sticky-top float-left ml-0" href="index.html">
+                    <h3>Meti Adane </h3>
+                    <h3 class="description">Designer | programmer</h3>
+                </a>
+
+                <nav class="navbar navbar-expand-md navbar-light pl-0">
+                    <button class="ml-4 mr-0 navbar-toggler align-content-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        
+                    <ul class="navbar-nav flex-column">
+                        
+                        <li><a class="pl-0 nav-link pt-0 pb-0 text-body" href="Home.html">Home</a></li>
+                        <li><a class="pl-0 nav-link pt-0 pb-0 text-body" href="blog.html">Blog</a></li>
+                        <li><a class="pl-0 nav-link pt-0 pb-0 text-body" href="Design.html">Design</a></li>
+                        <li><a class="pl-0 nav-link pt-0 pb-0 text-body" href="Gallery.html">Gallery</a></li>
+                        <li><a class="pl-0nav-link pt-0 pb-0 text-body" href="index.html">Contact + About me</a></li>
+                        <div class="d-md-none small h-20 w-75">        
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-share"></a>
+                        </div> 
+                    </ul>
+                    </div> 
+                    
+                </nav>
+
+                <footer class="text-muted pt-5 small" >
+                    &nbsp;&copy;Meti Adane Bayissa 2020  
+                </footer>
+
+                <div id="icons" class="fixed-bottom ml-5 pl-5">        
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-share"></a>
+                </div> 
+                
+            </div>
+        </div>
+        
+    
+        <div class="col-md-8">
+            <div class="blog-content">
+                <h1 class="title text-uppercase mt-4">Relative size units in CSS3</h1>
+                <date class="date-text">Mar 17 2020</date>
+                <br>
+        
+                <p class="mt-5">
+                When it comes to setting the size of type in CSS, you have lots of options. It can either be a keywords like {xx-small, x-small, small, medium, large, x-large, and xx-large as well as relative keywords smaller and larger} or numerical values. 
+                </p>
+                <p>
+                When using a value, we need to declare a unit of measure which itself has four options. The main difference between these units lays in how the browser determines the px value they translate into. Understanding this difference is the key to determining when to use each unit.
+                <br>
+                <h2 class="text-uppercase font-weight-bolder my-3">px</h2>
+                The pixel units (px) is by far the most popular and probably the most used unit. For any device, a reference pixel is defined based on resolution. The user agent scales px to match this reference pixel, and accordingly a size is set. Also, sizes are pretty consistent across all devices.
+                <br>
+                That being said, units defined in px are fixed. Element properties defined using px, will not be responsive by default media queries are needed to make them responsive because the user cannot change the font size in some browsers. For example, users with limited vision may wish to set the font size much larger than the size chosen by a web designer. Avoid using them for font sizes if you wish to create an inclusive design.
+                <br>
+                <h2 class="text-uppercase font-weight-bolder my-3">em </h2></p>
+                <p>
+                With em, sizes are always relative to the parent element. This would mean, if body is 10px, the font-size of h1 would be 20px and h2 would be 16px.
+                <br>
+                <h2 class="text-uppercase font-weight-bolder my-3">% </h2></p>
+                <p>Percentage values are not units, but are used to define measurement properties. Percentage values are very similar to em units. The value set for a length or size unit using %, is relative to a property of either the same element, a parent element or that of the containing block.
+                <br>
+                 If a parent has the font-size of 20px and the child has a font-size of 50%, it will come out to 10px. Just like em's percentage sizing is also relative. It also cascades in the same way, so the very problem described above of the list item and the paragraph item applies here as well.
+                <br>
+                <em>But the compounding issue…</em> For multi-level nested elements, em could potentially lead you to a compounding issue, where the size of nested elements, could get increasingly larger or smaller than intended. The more nesting the html has, the more it would keep on increasing or decreasing the font size.
+                </p>
+                
+                <h2 class="text-uppercase font-weight-bolder my-3"> rem </h2>
+                The rem unit is a computed value based on the size of the root element. And is best used when setting font-sizes. The root element, is one, which does not have a parent. In HTML, <html> is the root element. In other words, it lets you specify a font size in a relative fashion without being affected by the size of the parent, thereby eliminating compounding.
+                <br>
+                <h2 class="text-uppercase font-weight-bolder my-3">Conclusion</h2></p>
+                The greatest power that rem units offer is not just that they give consistent sizing regardless of element inheritance. Rather, it’s that they give us a way to have user font size settings influence every single aspect of a site’s layout by using rem units where we used to use px units.
+                <br>
+                For this reason the primary purpose of using rem units should be to ensure that whatever default font size a user has their browser set to, the layout will adjust to accommodate the size of text within it.
+                <br>
+                A site can be designed initially focusing on the most common default browser font size of 16px.But by using relative size units, if a user increases their font size, the integrity of the layout will be preserved, and the text won’t get squashed up in a rigid space meant for smaller text.
+                <br>
+                          
+            </div>
+            <hr>
+        <h5>Other blogs</h5>
+        <hr>
+        <div class="row">
+            
+
+            <div class="col-sm-4">
+                <div class="card ">
+                    
+                    <img src="https://i.stack.imgur.com/Va35b.png" alt="gameengines">
+                    <div class="card-body ">
+                        <h5 class="card-title text-uppercase font-weight-bold"> Relative Unit Size in css3</h5>
+                        <p class="card-text text-truncate">A site can be designed initially focusing on the most common default browser font size of 16px.But by using relative size units, the integrity of the layout ... 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card ">
+                    
+                    <img src="https://blog.altabel.com/wp-content/uploads/2015/01/gameengines.jpg" alt="gameengines">
+                    <div class="card-body ">
+                        <h5 class="card-title text-uppercase font-weight-bold"> How do Browsers Render 200px</h5>
+                        <p class="card-text text-truncate">Unless overridden meaning the style sheet has no font size specified then it is determined by the browser and the standard default font size ... 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card ">
+                    
+                    <img src="https://res.cloudinary.com/eternitech/images/f_auto,q_auto/v1588246378/eternitech/CSS3/CSS3.png" alt="gameengines">
+                    <div class="card-body ">
+                        <h5 class="card-title text-uppercase font-weight-bold "> CSS3 has got some hot features</h5>
+                        <p class="card-text text-truncate">CSS3 has introduced new properties that debug previous quirks and extend CSS2 features, and it’s even got some JavaScript-like capabilities... 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+    <div class="row">
+        <div class="col-md-12">
+            <footer class="end-footer text-muted pt-5 small text-center">
+                &nbsp;&copy;Meti Adane Bayissa 2020  
+            </footer>
+        </div>
+    </div>
+        </div>
+    </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
