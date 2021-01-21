@@ -3,6 +3,13 @@
         display: block;
         color: red;
     }  */
+    
+    .col-md-4{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+    }
     .col-lg-6{
         display: flex;
         justify-content: center;
@@ -14,22 +21,6 @@
         color: #000;
         height: 100%;
     }
-
-    footer {
-        visibility: hidden;
-    }
-    footer.end-footer{
-        visibility:visible;
-    }
-    #icons{
-        visibility: hidden;
-    }
-    .col-md-4{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-    }
     .navBarContent{
         top: 0;
         position: fixed; 
@@ -39,7 +30,6 @@
         justify-content: space-between; 
         /* padding-bottom: 2rem;     */
     }
-  
     .navbar{
         position: absolute;
         right: 0;
@@ -47,8 +37,7 @@
         display: flex;
         height: 100%;
         justify-content: flex-end;
-        align-content: center;
-        
+        align-content: center;        
     } 
     nav{
         width: 100%;
@@ -72,7 +61,15 @@
         padding: 1rem 0 ; 
         font-size: larger;
     }
-     
+    footer {
+        visibility: hidden;
+    }
+    footer.end-footer{
+        visibility:visible;
+    }
+    #icons{
+        visibility: hidden;
+    }     
     .col-md-8{
         position: relative;
         margin-top: 12rem;
